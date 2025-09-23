@@ -1,1 +1,82 @@
-歡迎來到蔡妤柔的網站
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zou異的藝想世界</title>
+    <style>
+        body {
+            background: #18181b;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', 'Noto Sans TC', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: rgba(30,30,34,0.92);
+            box-shadow: 0 8px 32px 0 rgba(255, 182, 193, 0.10);
+            border-radius: 24px;
+            padding: 2.5em 3em;
+            text-align: center;
+            max-width: 440px;
+            border: 2px solid #ffb6d5;
+        }
+        h1, h2 {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 1s cubic-bezier(.6,-0.28,.74,.05) forwards;
+        }
+        h2 {
+            animation-delay: 0.4s;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 900;
+            letter-spacing: 0.18em;
+            background: linear-gradient(90deg, #ffb6d5 10%, #ff6fcb 60%, #fff0f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 0.7em;
+            text-shadow: 0 2px 16px #ffb6d5, 0 1px 0 #fff1fa;
+            white-space: nowrap;
+        }
+        h2 {
+            color: #ffb6d5;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            margin-top: -0.5em;
+            margin-bottom: 1em;
+            text-shadow: 0 1px 8px #ff6fcb, 0 1px 0 #fff1fa;
+        }
+        p {
+            color: #ffb6d5;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-shadow: 0 1px 8px #ff6fcb, 0 1px 0 #fff1fa;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+            .card { padding: 1.2em 0.5em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>zou異的藝想世界</h1>
+        <h2 style="color:#ffb6d5;font-size:1.1rem;font-weight:700;letter-spacing:0.12em;margin-top:-0.5em;margin-bottom:1em;text-shadow:0 1px 8px #ff6fcb,0 1px 0 #fff1fa;">蔡妤柔 ZOUYI ZOEY</h2>
+    </div>
+</body>
+</html>
