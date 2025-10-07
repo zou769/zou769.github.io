@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two columns</h2>
+<p>To make a cell span more than one column, use the colspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>分類</th>
+    <th>縮圖</th>
+    <th>標題與描述</th>
+    <th>拍攝日期</th>
+  </tr>
+  <tr>
+    <td rowspan="2">城市風景</td>
+    <td><img src="istockphoto-1460854964-612x612.png" alt="Italian Trulli"></td>
+    <td>河畔夕照
+金色陽光灑在河面，倒映城市天際線。</td>
+    <td>2025-09-01</td>
+  </tr>
+  <tr>
+    <td><img src="photo-1752718315661-20e1472d91b3.png" alt="Italian Trulli"></td>
+    <td>夜色小徑
+街角咖啡店透出溫暖光暈。</td>
+    <td>2025-09-02</td>
+  </tr>
+   <tr>
+    <th colspan="4">海邊旅行</th>
+  </tr>
+  <tr>
+    <th>自然風景</th>
+    <th><img src="istockphoto-1008876304-612x612.png" alt="Italian Trulli"></th>
+    <th>清晨海浪
+第一道陽光照亮浪花與沙粒。</th>
+    <th>2025-09-03</th>
+  </tr>
+</table>
+</body>
+</html>
