@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <title>個人名片</title>
@@ -15,16 +16,18 @@
             align-items: center;
             height: 100vh;
         }
+
         .card {
             display: flex;
             background: #fff;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
             border-radius: 24px;
             overflow: hidden;
             width: 480px;
             max-width: 95vw;
             min-height: 260px;
         }
+
         .card-left {
             width: 40%;
             display: flex;
@@ -33,28 +36,29 @@
             background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
             position: relative;
         }
+
         .hexagon {
             width: 140px;
             aspect-ratio: 1;
-            clip-path: polygon(
-                50% 0%, 
-                93% 25%, 
-                93% 75%, 
-                50% 100%, 
-                7% 75%, 
-                7% 25%
-            );
+            clip-path: polygon(50% 0%,
+                    93% 25%,
+                    93% 75%,
+                    50% 100%,
+                    7% 75%,
+                    7% 25%);
             overflow: hidden;
-            box-shadow: 0 4px 16px rgba(33,147,176,0.18);
+            box-shadow: 0 4px 16px rgba(33, 147, 176, 0.18);
             border: 4px solid #fff;
             background: #eee;
         }
+
         .hexagon img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
+
         .card-right {
             width: 60%;
             padding: 32px 24px;
@@ -63,17 +67,20 @@
             justify-content: center;
             color: #222;
         }
+
         .name {
             font-size: 1.7em;
             font-weight: bold;
             margin-bottom: 8px;
             letter-spacing: 1px;
         }
+
         .title {
             font-size: 1.1em;
             color: #2193b0;
             margin-bottom: 16px;
         }
+
         .info {
             font-size: 1em;
             line-height: 1.7;
@@ -81,11 +88,12 @@
         }
     </style>
 </head>
+
 <body>
     <div class="card">
         <div class="card-left">
             <div class="hexagon">
-                <img src="IMG_5940.jpg" alt="個人照片">
+                <img src="IMG_5940 (1).jpg" alt="個人照片">
             </div>
         </div>
         <div class="card-right">
