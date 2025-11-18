@@ -1,177 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>初音未來介紹</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>國立臺北教育大學 — 114 教學科技應用設計競賽實施辦法</title>
+    <style>
+        :root{
+            --bg:#f7f9fb; --card:#fff; --accent:#0b5ed7; --muted:#6b7280;
+            --maxw:980px;
+            font-family: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        html,body{height:100%}
+        body{
+            margin:0; background:var(--bg); color:#0f1724; -webkit-font-smoothing:antialiased;
+            line-height:1.6;
+            display:flex; align-items:flex-start; justify-content:center; padding:32px 16px;
+        }
+        .container{width:100%; max-width:var(--maxw);}
+        header{
+            background:linear-gradient(90deg, rgba(11,94,215,0.12), rgba(11,94,215,0.04));
+            border-radius:12px; padding:20px; margin-bottom:18px; display:flex; gap:16px; align-items:center;
+        }
+        .logo{
+            width:72px; height:72px; flex:0 0 72px; border-radius:8px;
+            background:linear-gradient(135deg,var(--accent),#7aa8ff); display:flex; align-items:center; justify-content:center;
+            color:#fff; font-weight:700; font-size:18px;
+        }
+        header h1{margin:0; font-size:20px;}
+        header p{margin:4px 0 0; color:var(--muted); font-size:13px;}
+        nav{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;}
+        a.btn{
+            display:inline-block; text-decoration:none; background:var(--accent); color:#fff; padding:8px 12px; border-radius:8px;
+            font-size:14px;
+        }
+        main{background:var(--card); border-radius:12px; padding:20px; box-shadow:0 6px 18px rgba(11,37,71,0.06);}
+        h2{margin-top:0; color:var(--accent);}
+        section{margin-bottom:16px;}
+        .meta{color:var(--muted); font-size:13px; margin-bottom:8px;}
+        ul{padding-left:1.1rem;}
+        table{width:100%; border-collapse:collapse; margin-top:8px;}
+        th,td{padding:8px; border:1px solid #eef2f6; text-align:left; font-size:14px}
+        th{background:#fafcff; color:var(--accent);}
+        footer{margin-top:12px; color:var(--muted); font-size:13px; text-align:center;}
+        @media (min-width:880px){
+            header{padding:18px 22px;}
+            .logo{width:88px;height:88px;font-size:20px;flex:0 0 88px}
+            header h1{font-size:22px}
+        }
+    </style>
 </head>
-
-<body class="w3-light-grey">
-
-  <!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-  <div class="w3-content" style="max-width:1400px">
-
-    <!-- Header -->
-    <header class="w3-container w3-center w3-padding-32">
-      <h1><b>初音未來 介紹</b></h1>
-      <p>Welcome to the introduction of <span class="w3-tag">Hatsune Miku</span></p>
-    </header>
-
-    <!-- Grid -->
-    <div class="w3-row">
-
-      <!-- Blog entries -->
-      <div class="w3-col l8 s12">
-        <!-- Blog entry -->
-        <div class="w3-card-4 w3-margin w3-white">
-          <img src="miku.jpg" alt="Hatsune Miku" style="width:100%">
-          <div class="w3-container">
-            <h3><b>誰是初音未來?</b></h3>
-            <h5>介紹 </h5>
-          </div>
-
-          <div class="w3-container">
-            <p>
-              初音未來是一位全球性的流行偶像，但她實際上是 Vocaloid——一種由 Crypton Future Media 開發的歌聲合成軟體。
-
-              她的名字翻譯成「未來的第一個聲音」。
-
-              她的官方形象是一位留著標誌性長蔥色雙馬尾的 16 歲少女。初音未來的聲音是基於日本聲優藤田咲的聲音樣本。</p>
-            <div class="w3-row">
-              <div class="w3-col m8 s12">
-                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>閱讀更多 »</b></button></p>
-              </div>
-              <div class="w3-col m4 w3-hide-small">
-                <p><span class="w3-padding-large w3-right"><b>評論  </b> <span class="w3-tag">0</span></span></p>
-              </div>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">NTUE</div>
+            <div>
+                <h1>國立臺北教育大學 — 114「教學科技應用設計競賽」實施辦法</h1>
+                <p>鼓勵學生將數位科技應用於教學現場，結合 VR、AI、Apple 工具與互動設計。</p>
             </div>
-          </div>
-        </div>
-        <hr>
+        </header>
 
-        <!-- Blog entry -->
-        <div class="w3-card-4 w3-margin w3-white">
-          <img src="kaglj5nxybs.jpg" alt="Hatsune Miku" style="width:100%">
-          <div class="w3-container">
-            <h3><b>What is Hatsune Miku?</b></h3>
-            <h5>introduction </h5>
-          </div>
+        <nav>
+            <a class="btn" href="#purpose">一、活動主旨</a>
+            <a class="btn" href="#organizer">二、辦理單位</a>
+            <a class="btn" href="#rules">三、競賽辦法</a>
+            <a class="btn" href="#themes">四、主題與組別</a>
+            <a class="btn" href="#schedule">五、報名與日程</a>
+            <a class="btn" href="#submission">六、繳件</a>
+            <a class="btn" href="#evaluation">七、評審標準</a>
+            <a class="btn" href="#awards">八、獎勵辦法</a>
+            <a class="btn" href="#notes">九、注意事項</a>
+        </nav>
 
-          <div class="w3-container">
-            <p>Hatsune Miku is a global pop sensation, but she is actually a Vocaloid a singing voice synthesizer
-              software developed by Crypton Future Media. Her name translates to "The first sound of the future."
+        <main>
+            <section id="purpose">
+                <h2>一、活動主旨</h2>
+                <p class="meta">目的與期望</p>
+                <p>為鼓勵學生將數位科技應用於教學現場，強化教材設計與創作能力，特舉辦本競賽。期望學生能靈活運用 VR、AI 技術及 Apple 教育工具，並結合數位媒體、互動設計及多元評量方式，設計具創新性與實用性的教學應用，增強學生於各領域之數位內容科技創建能力。</p>
+            </section>
 
-              She is officially depicted as a 16-year-old girl with iconic long, turquoise twintails. Miku's voice is
-              based on vocal samples from the Japanese voice actress Saki Fujita.</p>
-            <div class="w3-row">
-              <div class="w3-col m8 s12">
-                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-              </div>
-              <div class="w3-col m4 w3-hide-small">
-                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END BLOG ENTRIES -->
-      </div>
+            <section id="organizer">
+                <h2>二、辦理單位</h2>
+                <p class="meta">主辦</p>
+                <p>主辦單位：國立臺北教育大學教學發展中心</p>
+            </section>
 
-      <!-- Introduction menu -->
-      <div class="w3-col l4">
-        <!-- About Card -->
-        <div class="w3-card w3-margin w3-margin-top">
-          <img src="bykpoyr113d.jpg" style="width:100%">
-          <div class="w3-container w3-white">
-            <h4><b>初音未來</b></h4>
-            <p>初音未來是日本Crypton Future Media公司基於Yamaha VOCALOID語音合成技術所開發的虛擬女性歌手，以其綠色雙馬尾和獨特服裝的動漫形象聞名。
-              她於2007年8月31日推出，由日本配音演員藤田咲的聲音為原型，擅長演唱流行歌曲。 初音未來不僅是一個電子樂器軟體，她還是一個具有人氣的虛擬角色，廣泛出現在音樂、遊戲等領域。
-              <br>Hatsune Miku is virtual female singer developed by the Japanese company Crypton Future Media, based on Yamaha's VOCALOID
-              voice synthesis technology. She is famous for her anime-style appearance with green twintails and a unique
-              costume.
+            <section id="rules">
+                <h2>三、競賽辦法</h2>
+                <ul>
+                    <li>參加對象：本校在學學生（含學士班、碩士班、碩士在職專班）。</li>
+                    <li>每團隊成員人數 1 至 4 人，並可邀請老師 1 名擔任指導老師。</li>
+                    <li>每位學生最多可報名 2 件作品，但同一作品不得同時投於不同類別。</li>
+                </ul>
+            </section>
 
-              She was launched on August 31, 2007, and her voice is modeled after the Japanese voice actress Saki
-              Fujita. She excels at singing pop songs.
+            <section id="themes">
+                <h2>四、競賽主題與組別</h2>
+                <p class="meta">三類別</p>
+                <ol>
+                    <li><strong>Uptale VR 教學應用設計組：</strong>設計沉浸式教學場景，可包含國小課程教材、教育議題或真實情境相關之教學應用與學習規劃，展現虛擬實境於教學現場之應用潛能。</li>
+                    <li><strong>AI 小工具教學創新應用組：</strong>發展 AI 工具（如 ChatGPT、生成式 AI、學習分析工具等）於教學現場之應用，解決學習難題或提升學習成效。</li>
+                    <li><strong>Apple 教育應用設計組：</strong>包含教案設計（結合 iPad、Mac 等 Apple 生態系工具）、或應用程式設計（自行開發或利用 Swift/Swift Playgrounds 等進行教育應用創作）。</li>
+                </ol>
+            </section>
 
-              Hatsune Miku is not just electronic instrument software; she is also a popular virtual character who
-              widely appears in music, games, and other fields.</br> </p>
-          </div>
-        </div>
-        <hr>
+            <section id="schedule">
+                <h2>五、報名方式及日程</h2>
+                <ul>
+                    <li>競賽報名：自即日起至 114 年 11 月 7 日(五)截止。報名網址：
+                        <a href="https://forms.gle/Hs9SkDYpiAaB2J9p6" target="_blank" rel="noopener">https://forms.gle/Hs9SkDYpiAaB2J9p6</a>
+                    </li>
+                    <li>繳件時間：自即日起至 114 年 12 月 14 日(日)截止。</li>
+                    <li>得獎名單公布：預計於 115 年 1 月底於「教學發展中心」網頁公布，並以 Email 或電話通知領獎。</li>
+                </ul>
+            </section>
 
-        <!-- Posts -->
-        <div class="w3-card w3-margin">
-          <div class="w3-container w3-padding">
-            <h4> 初音未來不同形象</h4>
-          </div>
-          <ul class="w3-ul w3-hoverable w3-white">
-            <li class="w3-padding-16">
-              <img src="1.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">雪未來</span><br>
-              <span>代表冬天的未來</span>
-            </li>
-            <li class="w3-padding-16">
-              <img src="2.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">櫻未來</span><br>
-              <span>代表春天的未來</span>
-            </li>
-            <li class="w3-padding-16">
-              <img src="3.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">瓶未來</span><br>
-              <span>頭髮是纖維狀的水，裡面養著一隻名為魚吉的鸚鵡魚</span>
-            </li>
-            <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-              <img src="4.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">楓未來</span><br>
-              <span>以秋天特色改造形象誕生的亞種</span>
-            </li>
-          </ul>
-        </div>
-        <hr>
+            <section id="submission">
+                <h2>六、競賽流程與繳件資料</h2>
+                <p class="meta">流程重點</p>
+                <ol>
+                    <li>競賽報名：線上報名並上傳資料。報名 Uptale VR 組者，完成報名後以組別為單位開通 Uptale VR 帳號（Email 通知）。</li>
+                    <li>繳件資料：
+                        <ul>
+                            <li>計畫書（PDF）：須包含 (1) 競賽組別、作品名稱、團隊介紹 (2) 創作理念 (3) 教學目標 (4) 教學內容規劃 (5) 預期成效。</li>
+                            <li>成品：如 Uptale VR 成品、AI 工具應用 Demo、Apple 教案或應用程式原型。</li>
+                            <li>作品導覽影片（mp4，10 分鐘內，HD1080P），請上傳至 YouTube 並提供連結。</li>
+                            <li>個人資料保護聲明暨數位內容授權書。</li>
+                        </ul>
+                    </li>
+                    <li>繳交方式：將檔案依規定命名（編號_團隊名_作品名_檔名）後壓縮為 zip 上傳至：
+                        <a href="https://forms.gle/PQ1AEJ1xBo3yRTZd6" target="_blank" rel="noopener">https://forms.gle/PQ1AEJ1xBo3yRTZd6</a>
+                    </li>
+                </ol>
+            </section>
 
-        <!-- Labels / tags -->
-        <div class="w3-card w3-margin">
-          <div class="w3-container w3-padding">
-            <h4>Tags</h4>
-          </div>
-          <div class="w3-container w3-white">
-            <p><span class="w3-tag w3-black w3-margin-bottom">初音未來</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">初音</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">未來</span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">miku</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hatsune miku</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hatsune</span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">idol</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">fans</span> <span
-                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-            </p>
-          </div>
-        </div>
+            <section id="evaluation">
+                <h2>七、評審標準</h2>
+                <table>
+                    <thead>
+                        <tr><th>評分項目</th><th>占比</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>完整性</td><td>40%</td></tr>
+                        <tr><td>創意表現及互動應用</td><td>30%</td></tr>
+                        <tr><td>實踐效益及未來延展性</td><td>30%</td></tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <!-- END Introduction Menu -->
-      </div>
+            <section id="awards">
+                <h2>八、獎勵辦法</h2>
+                <p class="meta">各類別獎項</p>
+                <ul>
+                    <li>特優（1 件）：獎金新台幣 8,000 元，每人獎狀 1 張。</li>
+                    <li>優選（1 件）：獎金新台幣 5,000 元，每人獎狀 1 張。</li>
+                    <li>佳作（2 件）：獎金新台幣 2,000 元，每人獎狀 1 張。</li>
+                </ul>
+                <p class="meta">備註</p>
+                <p>主辦方得視參賽件數或作品水準，由評審委員決議並調整獲獎情形，名次件數得調整或從缺。</p>
+            </section>
 
-      <!-- END GRID -->
-    </div><br>
+            <section id="notes">
+                <h2>九、注意事項</h2>
+                <ol>
+                    <li>參賽作品需為參賽者/隊伍自行開發，若涉及智慧財產權侵害，責任由參賽者自負，並取消參賽或得獎資格，追回獎項及獎金。</li>
+                    <li>本競賽屬非營利且具有教育性質，使用非原創素材時，須註明來源（圖片、音樂等相關資料）。</li>
+                    <li>各參賽作品之著作人格權歸屬參賽隊伍，但主辦單位擁有為推廣活動及教育目的之重製、修改、下載及公開展示等著作財產權利。</li>
+                    <li>後續視成果發表與推廣需求，主辦單位得邀請獲獎隊伍參加相關課程與活動。</li>
+                </ol>
+            </section>
 
-    <!-- END w3-content -->
-  </div>
+            <section>
+                <h2>十、經費來源</h2>
+                <p>本案經費來源由教育部高教深耕計畫經費項下支應。</p>
+            </section>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">zouyi</a></p>
-  </footer>
-
+            <footer>
+                <p>欲報名或繳交作品請使用上方報名/繳交連結。若需修改或加入更多說明，可將內容直接更新於此檔。</p>
+            </footer>
+        </main>
+    </div>
 </body>
-
 </html>
